@@ -7,9 +7,7 @@ import (
 )
 
 func swap(x *int, y *int) {
-	temp := *y
-	*y = *x
-	*x = temp
+	x, y = y, x
 }
 
 func partition(array []int, p uint, q uint, pivotLocation uint) uint {
